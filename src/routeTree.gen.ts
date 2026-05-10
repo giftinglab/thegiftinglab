@@ -10,12 +10,24 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as GiftKitsRouteImport } from './routes/gift-kits'
+import { Route as CatalogRouteImport } from './routes/catalog'
+import { Route as CaseStudiesRouteImport } from './routes/case-studies'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
 const GiftKitsRoute = GiftKitsRouteImport.update({
   id: '/gift-kits',
   path: '/gift-kits',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CatalogRoute = CatalogRouteImport.update({
+  id: '/catalog',
+  path: '/catalog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CaseStudiesRoute = CaseStudiesRouteImport.update({
+  id: '/case-studies',
+  path: '/case-studies',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -32,30 +44,38 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/case-studies': typeof CaseStudiesRoute
+  '/catalog': typeof CatalogRoute
   '/gift-kits': typeof GiftKitsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/case-studies': typeof CaseStudiesRoute
+  '/catalog': typeof CatalogRoute
   '/gift-kits': typeof GiftKitsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/case-studies': typeof CaseStudiesRoute
+  '/catalog': typeof CatalogRoute
   '/gift-kits': typeof GiftKitsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/gift-kits'
+  fullPaths: '/' | '/about' | '/case-studies' | '/catalog' | '/gift-kits'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/gift-kits'
-  id: '__root__' | '/' | '/about' | '/gift-kits'
+  to: '/' | '/about' | '/case-studies' | '/catalog' | '/gift-kits'
+  id: '__root__' | '/' | '/about' | '/case-studies' | '/catalog' | '/gift-kits'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  CaseStudiesRoute: typeof CaseStudiesRoute
+  CatalogRoute: typeof CatalogRoute
   GiftKitsRoute: typeof GiftKitsRoute
 }
 
@@ -66,6 +86,20 @@ declare module '@tanstack/react-router' {
       path: '/gift-kits'
       fullPath: '/gift-kits'
       preLoaderRoute: typeof GiftKitsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/catalog': {
+      id: '/catalog'
+      path: '/catalog'
+      fullPath: '/catalog'
+      preLoaderRoute: typeof CatalogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/case-studies': {
+      id: '/case-studies'
+      path: '/case-studies'
+      fullPath: '/case-studies'
+      preLoaderRoute: typeof CaseStudiesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -88,6 +122,8 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  CaseStudiesRoute: CaseStudiesRoute,
+  CatalogRoute: CatalogRoute,
   GiftKitsRoute: GiftKitsRoute,
 }
 export const routeTree = rootRouteImport
