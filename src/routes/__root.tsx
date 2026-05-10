@@ -72,14 +72,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "The Gifting Lab — Corporate Gifts MY & SG" },
+      { name: "description", content: "Premium corporate gifts, onboarding kits, festive gifts and custom merchandise — designed and delivered across Malaysia & Singapore." },
+      { name: "author", content: "The Gifting Lab" },
+      { property: "og:title", content: "The Gifting Lab" },
+      { property: "og:description", content: "Corporate gifts that people actually want." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
