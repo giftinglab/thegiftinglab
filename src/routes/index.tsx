@@ -67,7 +67,7 @@ function HomePage() {
               want.
             </h1>
             <p className="text-lg text-muted-foreground max-w-lg">
-              From onboarding kits to festive hampers — fully customized, beautifully packaged, and delivered across Malaysia & Singapore.
+              From onboarding kits to festive hampers — fully customized, beautifully packaged, and delivered across Malaysia, Singapore & Thailand.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link to="/contact" className="group inline-flex items-center gap-2 h-12 rounded-full bg-primary px-6 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.02]">
