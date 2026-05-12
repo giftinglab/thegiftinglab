@@ -247,7 +247,7 @@ function HomePage() {
                 Get Free Proposal <ArrowRight className="h-4 w-4" />
               </Link>
               <a
-                href="https://wa.me/60312345678"
+                href="https://wa.me/60108739642"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 h-12 rounded-full border border-border bg-background px-6 text-sm font-medium hover:bg-background/70"
