@@ -100,7 +100,7 @@ function HomePage() {
         <div className="container-page py-10 grid grid-cols-3 gap-6 text-center">
           <Stat n="500+" label="Corporate clients" />
           <Stat n="10,000+" label="Gifts delivered" />
-          <Stat n="MY · SG" label="Cross-border fulfillment" />
+          <Stat n="MY · SG · TH" label="Regional fulfillment" />
         </div>
       </section>
 

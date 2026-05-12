@@ -45,7 +45,7 @@ function AboutPage() {
         {[
           { n: "2019", t: "Founded in Kuala Lumpur" },
           { n: "12", t: "In-house designers & PMs" },
-          { n: "MY · SG", t: "Dual fulfillment hubs" },
+          { n: "MY · SG · TH", t: "Regional fulfillment hubs" },
         ].map((s) => (
           <div key={s.n} className="border-t border-foreground pt-6">
             <div className="font-display text-5xl">{s.n}</div>
