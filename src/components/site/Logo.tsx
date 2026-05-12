@@ -8,7 +8,7 @@ export function Logo({ light = false }: { light?: boolean }) {
           light ? "bg-background text-primary" : "bg-primary text-primary-foreground"
         }`}
       >
-        TG
+        GL
       </span>
       <span className="font-display text-lg tracking-tight">
         The Gifting Lab
