@@ -80,7 +80,7 @@ function ContactPage() {
             <h3 className="font-display text-xl">Reach us directly</h3>
             <ContactItem i={MapPin} label="Locations" value="Kuala Lumpur · Singapore · Bangkok" />
             <ContactItem i={Mail} label="Email" value="hello@thegiftinglab.co" />
-            <ContactItem i={Phone} label="Phone" value="+60 3 1234 5678" />
+            <ContactItem i={Phone} label="Phone" value="+60 10 873 9642" />
             <ContactItem i={MessageCircle} label="WhatsApp" value="+60 12 345 6789" />
           </div>
           <div className="rounded-2xl border border-border p-8 space-y-3">
