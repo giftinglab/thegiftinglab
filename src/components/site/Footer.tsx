@@ -29,11 +29,13 @@ export function Footer() {
         />
         <div>
           <h4 className="font-display text-sm font-medium mb-4">Get in touch</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li>hello@thegiftinglab.co</li>
-            <li>+60 3 1234 5678</li>
-            <li>Kuala Lumpur · Singapore</li>
-          </ul>
+          <div className="space-y-4">
+            <p className="text-sm font-medium">Kuala Lumpur · Singapore · Bangkok</p>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li>+60 3 1234 5678</li>
+              <li>hello@thegiftinglab.co</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="border-t border-border">
