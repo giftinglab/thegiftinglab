@@ -8,7 +8,7 @@ export function Footer() {
         <div className="md:col-span-1 space-y-4">
           <Logo />
           <p className="text-sm text-muted-foreground max-w-xs">
-            Corporate gifts that people actually use. Designed in KL, delivered across MY & SG.
+            Corporate gifts that people actually use. Designed in JB, delivered across MY, SG & TH.
           </p>
         </div>
         <FooterCol
