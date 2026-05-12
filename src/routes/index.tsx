@@ -89,7 +89,7 @@ function HomePage() {
             />
             <div className="absolute -bottom-6 -left-6 hidden md:flex flex-col gap-1 rounded-2xl bg-background border border-border p-5 shadow-xl">
               <span className="text-xs text-muted-foreground">Avg. delivery</span>
-              <span className="font-display text-2xl">10–14 days</span>
+              <span className="font-display text-2xl">15–30 days</span>
             </div>
           </div>
         </div>
@@ -181,7 +181,7 @@ function HomePage() {
             {[
               { i: Globe2, t: "Regional sourcing", d: "MY, SG, China, Vietnam supply chain." },
               { i: Factory, t: "Manufacturing expertise", d: "Direct factory relationships, no middlemen." },
-              { i: Truck, t: "Fast turnaround", d: "Most kits ship within 10–14 days." },
+              { i: Truck, t: "Fast turnaround", d: "Most kits ship within 15–30 days." },
               { i: PackageCheck, t: "Cross-border fulfillment", d: "Distribute to MY & SG offices in one project." },
               { i: Sparkles, t: "Custom packaging", d: "From sleeves to magnetic boxes — fully bespoke." },
               { i: Leaf, t: "Eco-conscious options", d: "Recycled, FSC, biodegradable lines available." },
