@@ -78,10 +78,10 @@ function ContactPage() {
         <aside className="lg:col-span-5 lg:pl-8 space-y-8">
           <div className="rounded-2xl bg-secondary p-8 space-y-5">
             <h3 className="font-display text-xl">Reach us directly</h3>
+            <ContactItem i={MapPin} label="Locations" value="Kuala Lumpur · Singapore · Bangkok" />
             <ContactItem i={Mail} label="Email" value="hello@thegiftinglab.co" />
             <ContactItem i={Phone} label="Phone" value="+60 3 1234 5678" />
             <ContactItem i={MessageCircle} label="WhatsApp" value="+60 12 345 6789" />
-            <ContactItem i={MapPin} label="Studio" value="Kuala Lumpur · Singapore" />
           </div>
           <div className="rounded-2xl border border-border p-8 space-y-3">
             <span className="text-xs uppercase tracking-widest text-gold">Response time</span>
