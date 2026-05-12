@@ -32,7 +32,7 @@ export function Footer() {
           <div className="space-y-4">
             <p className="text-sm font-medium">Kuala Lumpur · Singapore · Bangkok</p>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>+60 3 1234 5678</li>
+              <li>+60 10 873 9642</li>
               <li>hello@thegiftinglab.co</li>
             </ul>
           </div>
