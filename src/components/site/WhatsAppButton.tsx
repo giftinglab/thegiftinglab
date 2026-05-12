@@ -1,5 +1,5 @@
 const WHATSAPP_URL =
-  "https://wa.me/60312345678?text=Hi%20The%20Gifting%20Lab%2C%20I%27d%20like%20a%20quote.";
+  "https://wa.me/60108739642?text=Hi%20The%20Gifting%20Lab%2C%20I%27d%20like%20a%20quote.";
 
 export function WhatsAppButton() {
   return (
