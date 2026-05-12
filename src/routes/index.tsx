@@ -47,10 +47,20 @@ function HomePage() {
       <section className="relative overflow-hidden">
         <div className="container-page pt-16 pb-24 md:pt-24 md:pb-32 grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-8 animate-fade-up">
-            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3 py-1 text-xs text-muted-foreground">
-              <span className="h-1.5 w-1.5 rounded-full bg-eco" />
-              Now serving Malaysia & Singapore
-            </span>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[10px] md:text-xs uppercase tracking-widest text-muted-foreground font-medium">
+              <span className="flex items-center gap-2 bg-secondary/50 px-3 py-1 rounded-full">
+                <span className="h-1.5 w-1.5 rounded-full bg-eco" />
+                MY · SG · TH fulfillment
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="h-1 w-1 rounded-full bg-border" />
+                Custom branding
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="h-1 w-1 rounded-full bg-border" />
+                Bulk orders
+              </span>
+            </div>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.02]">
               Corporate gifts<br />
               <span className="italic text-muted-foreground">people actually</span><br />
