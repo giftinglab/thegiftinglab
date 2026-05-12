@@ -79,7 +79,7 @@ function ContactPage() {
           <div className="rounded-2xl bg-secondary p-8 space-y-5">
             <h3 className="font-display text-xl">Reach us directly</h3>
             <ContactItem i={MapPin} label="Locations" value="Kuala Lumpur · Singapore · Bangkok" />
-            <ContactItem i={Mail} label="Email" value="hello@thegiftinglab.co" />
+            <ContactItem i={Mail} label="Email" value="aurumaxisglobal@gmail.com" />
             <ContactItem i={Phone} label="Phone" value="+60 10 873 9642" />
             <ContactItem i={MessageCircle} label="WhatsApp" value="+60 12 345 6789" />
           </div>

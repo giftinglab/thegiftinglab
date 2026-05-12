@@ -33,7 +33,7 @@ export function Footer() {
             <p className="text-sm font-medium">Kuala Lumpur · Singapore · Bangkok</p>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>+60 10 873 9642</li>
-              <li>hello@thegiftinglab.co</li>
+              <li>aurumaxisglobal@gmail.com</li>
             </ul>
           </div>
         </div>
