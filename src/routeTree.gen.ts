@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as GiftKitsRouteImport } from './routes/gift-kits'
 import { Route as CustomizationRouteImport } from './routes/customization'
+import { Route as CorporateGiftsSingaporeRouteImport } from './routes/corporate-gifts-singapore'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CatalogRouteImport } from './routes/catalog'
 import { Route as CaseStudiesRouteImport } from './routes/case-studies'
@@ -25,6 +26,11 @@ const GiftKitsRoute = GiftKitsRouteImport.update({
 const CustomizationRoute = CustomizationRouteImport.update({
   id: '/customization',
   path: '/customization',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CorporateGiftsSingaporeRoute = CorporateGiftsSingaporeRouteImport.update({
+  id: '/corporate-gifts-singapore',
+  path: '/corporate-gifts-singapore',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -59,6 +65,7 @@ export interface FileRoutesByFullPath {
   '/case-studies': typeof CaseStudiesRoute
   '/catalog': typeof CatalogRoute
   '/contact': typeof ContactRoute
+  '/corporate-gifts-singapore': typeof CorporateGiftsSingaporeRoute
   '/customization': typeof CustomizationRoute
   '/gift-kits': typeof GiftKitsRoute
 }
@@ -68,6 +75,7 @@ export interface FileRoutesByTo {
   '/case-studies': typeof CaseStudiesRoute
   '/catalog': typeof CatalogRoute
   '/contact': typeof ContactRoute
+  '/corporate-gifts-singapore': typeof CorporateGiftsSingaporeRoute
   '/customization': typeof CustomizationRoute
   '/gift-kits': typeof GiftKitsRoute
 }
@@ -78,6 +86,7 @@ export interface FileRoutesById {
   '/case-studies': typeof CaseStudiesRoute
   '/catalog': typeof CatalogRoute
   '/contact': typeof ContactRoute
+  '/corporate-gifts-singapore': typeof CorporateGiftsSingaporeRoute
   '/customization': typeof CustomizationRoute
   '/gift-kits': typeof GiftKitsRoute
 }
@@ -89,6 +98,7 @@ export interface FileRouteTypes {
     | '/case-studies'
     | '/catalog'
     | '/contact'
+    | '/corporate-gifts-singapore'
     | '/customization'
     | '/gift-kits'
   fileRoutesByTo: FileRoutesByTo
@@ -98,6 +108,7 @@ export interface FileRouteTypes {
     | '/case-studies'
     | '/catalog'
     | '/contact'
+    | '/corporate-gifts-singapore'
     | '/customization'
     | '/gift-kits'
   id:
@@ -107,6 +118,7 @@ export interface FileRouteTypes {
     | '/case-studies'
     | '/catalog'
     | '/contact'
+    | '/corporate-gifts-singapore'
     | '/customization'
     | '/gift-kits'
   fileRoutesById: FileRoutesById
@@ -117,6 +129,7 @@ export interface RootRouteChildren {
   CaseStudiesRoute: typeof CaseStudiesRoute
   CatalogRoute: typeof CatalogRoute
   ContactRoute: typeof ContactRoute
+  CorporateGiftsSingaporeRoute: typeof CorporateGiftsSingaporeRoute
   CustomizationRoute: typeof CustomizationRoute
   GiftKitsRoute: typeof GiftKitsRoute
 }
@@ -135,6 +148,13 @@ declare module '@tanstack/react-router' {
       path: '/customization'
       fullPath: '/customization'
       preLoaderRoute: typeof CustomizationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/corporate-gifts-singapore': {
+      id: '/corporate-gifts-singapore'
+      path: '/corporate-gifts-singapore'
+      fullPath: '/corporate-gifts-singapore'
+      preLoaderRoute: typeof CorporateGiftsSingaporeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -181,6 +201,7 @@ const rootRouteChildren: RootRouteChildren = {
   CaseStudiesRoute: CaseStudiesRoute,
   CatalogRoute: CatalogRoute,
   ContactRoute: ContactRoute,
+  CorporateGiftsSingaporeRoute: CorporateGiftsSingaporeRoute,
   CustomizationRoute: CustomizationRoute,
   GiftKitsRoute: GiftKitsRoute,
 }
