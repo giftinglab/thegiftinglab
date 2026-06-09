@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
@@ -48,25 +49,28 @@
   --animate-marquee: marquee 40s linear infinite;
 }
 
+/* Animations */
 @keyframes fade-in {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
 @keyframes fade-up {
   from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 @keyframes marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
 
+/* Root theme */
 :root {
   --radius: 0.5rem;
 
-  /* Brand palette */
-  --background: oklch(0.985 0.008 80);          /* warm off-white */
-  --foreground: oklch(0.21 0.04 260);           /* deep navy ink */
+  --background: oklch(0.985 0.008 80);
+  --foreground: oklch(0.21 0.04 260);
   --ink: oklch(0.18 0.04 260);
 
   --card: oklch(1 0 0);
@@ -74,10 +78,10 @@
   --popover: oklch(1 0 0);
   --popover-foreground: var(--foreground);
 
-  --primary: oklch(0.22 0.05 260);              /* deep navy */
+  --primary: oklch(0.22 0.05 260);
   --primary-foreground: oklch(0.985 0.008 80);
 
-  --secondary: oklch(0.93 0.02 75);             /* warm beige */
+  --secondary: oklch(0.93 0.02 75);
   --secondary-foreground: var(--foreground);
 
   --muted: oklch(0.95 0.012 80);
@@ -93,41 +97,54 @@
   --input: oklch(0.89 0.015 75);
   --ring: oklch(0.22 0.05 260);
 
-  --gold: oklch(0.74 0.11 80);                  /* muted gold */
+  --gold: oklch(0.74 0.11 80);
   --gold-foreground: oklch(0.18 0.04 260);
 
-  --eco: oklch(0.72 0.08 150);                  /* soft eco green */
+  --eco: oklch(0.72 0.08 150);
   --eco-foreground: oklch(0.18 0.04 260);
 
   --sand: oklch(0.91 0.025 75);
   --sand-foreground: var(--foreground);
 }
 
+/* Dark mode */
 .dark {
   --background: oklch(0.16 0.03 260);
   --foreground: oklch(0.97 0.008 80);
   --card: oklch(0.2 0.04 260);
   --card-foreground: oklch(0.97 0.008 80);
+
   --primary: oklch(0.97 0.008 80);
   --primary-foreground: oklch(0.18 0.04 260);
+
   --secondary: oklch(0.27 0.04 260);
   --secondary-foreground: oklch(0.97 0.008 80);
+
   --muted: oklch(0.27 0.04 260);
   --muted-foreground: oklch(0.7 0.02 260);
+
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 15%);
 }
 
+/* Base styles */
 @layer base {
-  * { border-color: var(--color-border); }
-  html { scroll-behavior: smooth; }
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
-    font-feature-settings: "ss01", "cv11";
     -webkit-font-smoothing: antialiased;
+    font-feature-settings: "ss01", "cv11";
   }
+
   h1, h2, h3, h4 {
     font-family: var(--font-display);
     font-weight: 500;
@@ -135,6 +152,7 @@
   }
 }
 
+/* Utilities */
 @utility container-page {
   width: 100%;
   margin-inline: auto;
