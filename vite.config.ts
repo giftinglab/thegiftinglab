@@ -14,10 +14,6 @@ export default defineConfig({
     outDir: "dist",
     sourcemap: false,
     minify: true,
-
-    // IMPORTANT: forces static SPA build (removes SSR complexity)
-    ssr: false,
-
     rollupOptions: {
       output: {
         manualChunks: {
