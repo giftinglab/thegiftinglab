@@ -1,17 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { RouterProvider } from "@tanstack/react-router";
+import { getRouter } from "./router";
+import "./styles.css";
 
-const App = () => {
-  return (
-    <div style={{ padding: 40, fontFamily: "Inter" }}>
-      <h1>The Gifting Lab</h1>
-      <p>Corporate Gifts SG & MY</p>
-    </div>
-  );
-};
+const router = getRouter();
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>,
 );
