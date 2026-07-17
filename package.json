@@ -7,9 +7,10 @@
     "dev": "vite dev",
     "build": "vite build",
     "build:prerender": "vite build && node scripts/prerender.mjs",
-    "preview": "vite preview",
+    "preview": "bun run build && wrangler dev",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "deploy": "bun run build && wrangler deploy"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -70,7 +71,6 @@
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.0.4",
-    "vite": "^7.3.1",
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.6",
@@ -79,6 +79,8 @@
     "globals": "^15.15.0",
     "prettier": "^3.7.3",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.56.1"
+    "typescript-eslint": "^8.56.1",
+    "vite": "^7.3.1",
+    "wrangler": "^4.112.0"
   }
 }
