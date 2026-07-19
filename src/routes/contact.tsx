@@ -12,6 +12,20 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Get a Quote — The Gifting Lab" },
       { property: "og:description", content: "Free corporate gifting proposal in 48 hours." },
     ],
+        links: [{ rel: "canonical", href: "https://thegifting-lab.com/contact" }],
+        scripts: [
+          {
+                    type: "application/ld+json",
+                    children: JSON.stringify({
+                                "@context": "https://schema.org",
+                                "@type": "BreadcrumbList",
+                                itemListElement: [
+                                  { "@type": "ListItem", position: 1, name: "Home", item: "https://thegifting-lab.com/" },
+                                  { "@type": "ListItem", position: 2, name: "Contact", item: "https://thegifting-lab.com/contact" },
+                                            ],
+                    }),
+          },
+              ],
   }),
   component: ContactPage,
 });
