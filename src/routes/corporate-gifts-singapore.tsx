@@ -13,7 +13,7 @@ import pTote from "@/assets/product-tote.jpg";
 import pTech from "@/assets/product-tech.jpg";
 import pNotebook from "@/assets/product-notebook.jpg";
 
-const PAGE_URL = "https://thegiftinglab.lovable.app/corporate-gifts-singapore";
+const PAGE_URL = "https://thegifting-lab.com/corporate-gifts-singapore";
 const PAGE_TITLE = "Corporate Gifts Singapore | Premium Custom Gifts — The Gifting Lab";
 const PAGE_DESC = "Premium corporate gifts in Singapore — custom branded kits, onboarding gifts, event giveaways and VIP hampers. Trusted by HR, marketing & procurement teams across SG.";
 
@@ -42,7 +42,7 @@ export const Route = createFileRoute("/corporate-gifts-singapore")({
           provider: {
             "@type": "Organization",
             name: "The Gifting Lab",
-            url: "https://thegiftinglab.lovable.app",
+                      url: "https://thegifting-lab.com",
           },
           areaServed: { "@type": "Country", name: "Singapore" },
           name: "Corporate Gifts Singapore",
