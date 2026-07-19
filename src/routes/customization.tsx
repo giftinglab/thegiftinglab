@@ -13,6 +13,20 @@ export const Route = createFileRoute("/customization")({
       { property: "og:title", content: "Customization Services — The Gifting Lab" },
       { property: "og:image", content: heroImg },
     ],
+        links: [{ rel: "canonical", href: "https://thegifting-lab.com/customization" }],
+        scripts: [
+          {
+                    type: "application/ld+json",
+                    children: JSON.stringify({
+                                "@context": "https://schema.org",
+                                "@type": "BreadcrumbList",
+                                itemListElement: [
+                                  { "@type": "ListItem", position: 1, name: "Home", item: "https://thegifting-lab.com/" },
+                                  { "@type": "ListItem", position: 2, name: "Customization", item: "https://thegifting-lab.com/customization" },
+                                            ],
+                    }),
+          },
+              ],
   }),
   component: CustomizationPage,
 });
