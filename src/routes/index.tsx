@@ -20,7 +20,35 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "The Gifting Lab — Corporate Gifts That People Actually Want" },
       { property: "og:description", content: "Onboarding kits to festive gifts, fully customized and delivered across MY & SG." },
       { property: "og:image", content: heroImg },
-    ],
+        ],
+        links: [{ rel: "canonical", href: "https://thegifting-lab.com/" }],
+        scripts: [
+          {
+                    type: "application/ld+json",
+                    children: JSON.stringify({
+                                "@context": "https://schema.org",
+                                "@type": "LocalBusiness",
+                                name: "The Gifting Lab",
+                                image: "https://thegifting-lab.com/favicon-32.png",
+                                telephone: "+60-10-873-9642",
+                                priceRange: "$$",
+                                address: { "@type": "PostalAddress", addressLocality: "Kuala Lumpur", addressCountry: "MY" },
+                                areaServed: [{ "@type": "Country", name: "Malaysia" }, { "@type": "Country", name: "Singapore" }, { "@type": "Country", name: "Thailand" }],
+                    }),
+          },
+          {
+                    type: "application/ld+json",
+                    children: JSON.stringify({
+                                "@context": "https://schema.org",
+                                "@type": "FAQPage",
+                                mainEntity: [
+                                  { "@type": "Question", name: "How long does it take to produce a custom corporate gift kit?", acceptedAnswer: { "@type": "Answer", text: "Most kits ship within 15-30 days from brief approval, including sampling, production and QC." } },
+                                  { "@type": "Question", name: "What is the minimum order quantity for custom gift kits?", acceptedAnswer: { "@type": "Answer", text: "The minimum order quantity is 25 units per kit design." } },
+                                  { "@type": "Question", name: "Which countries does The Gifting Lab deliver to?", acceptedAnswer: { "@type": "Answer", text: "We design, produce and deliver corporate gifts across Malaysia, Singapore and Thailand." } },
+                                            ],
+                    }),
+          },
+              ],
   }),
   component: HomePage,
 });
