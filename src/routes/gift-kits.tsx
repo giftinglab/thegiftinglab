@@ -20,6 +20,37 @@ export const Route = createFileRoute("/gift-kits")({
       { property: "og:title", content: "Corporate Gift Kits — The Gifting Lab" },
       { property: "og:image", content: ucOnboarding },
     ],
+        links: [{ rel: "canonical", href: "https://thegifting-lab.com/gift-kits" }],
+        scripts: [
+          {
+                    type: "application/ld+json",
+                    children: JSON.stringify({
+                                "@context": "https://schema.org",
+                                "@type": "BreadcrumbList",
+                                itemListElement: [
+                                  { "@type": "ListItem", position: 1, name: "Home", item: "https://thegifting-lab.com/" },
+                                  { "@type": "ListItem", position: 2, name: "Gift Kits", item: "https://thegifting-lab.com/gift-kits" },
+                                            ],
+                    }),
+          },
+          {
+                    type: "application/ld+json",
+                    children: JSON.stringify({
+                                "@context": "https://schema.org",
+                                "@type": "ItemList",
+                                itemListElement: [
+                                  { "@type": "Product", position: 1, name: "Welcome Day One Kit", description: "Notebook, bottle, lanyard, branded magnetic box.", offers: { "@type": "Offer", priceCurrency: "MYR", price: "145", availability: "https://schema.org/InStock" } },
+                                  { "@type": "Product", position: 2, name: "Heritage Tote Set", description: "Canvas tote, ceramic mug, brass pen, gift sleeve.", offers: { "@type": "Offer", priceCurrency: "MYR", price: "98", availability: "https://schema.org/InStock" } },
+                                  { "@type": "Product", position: 3, name: "Executive Navy Edition", description: "Leather notebook, brass pen, presentation gift box.", offers: { "@type": "Offer", priceCurrency: "MYR", price: "220", availability: "https://schema.org/InStock" } },
+                                  { "@type": "Product", position: 4, name: "Tech Essentials Pouch", description: "Wireless charger, power bank, cable kit.", offers: { "@type": "Offer", priceCurrency: "MYR", price: "175", availability: "https://schema.org/InStock" } },
+                                  { "@type": "Product", position: 5, name: "Festive Navy Hamper", description: "Premium chocolates, candle, branded box, ribbon.", offers: { "@type": "Offer", priceCurrency: "MYR", price: "260", availability: "https://schema.org/InStock" } },
+                                  { "@type": "Product", position: 6, name: "Conference Essentials", description: "Branded cap, tumbler, lanyard, tote, name badge.", offers: { "@type": "Offer", priceCurrency: "MYR", price: "65", availability: "https://schema.org/InStock" } },
+                                  { "@type": "Product", position: 7, name: "VIP Leather Set", description: "Leather portfolio, premium pen, whisky glass.", offers: { "@type": "Offer", priceCurrency: "MYR", price: "480", availability: "https://schema.org/InStock" } },
+                                  { "@type": "Product", position: 8, name: "Sustain Kit", description: "Bamboo tumbler, cork notebook, organic tote.", offers: { "@type": "Offer", priceCurrency: "MYR", price: "120", availability: "https://schema.org/InStock" } },
+                                            ],
+                    }),
+          },
+              ],
   }),
   component: GiftKitsPage,
 });
