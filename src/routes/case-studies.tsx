@@ -16,6 +16,20 @@ export const Route = createFileRoute("/case-studies")({
       { property: "og:title", content: "Case Studies — The Gifting Lab" },
       { property: "og:image", content: ucOnboarding },
     ],
+        links: [{ rel: "canonical", href: "https://thegifting-lab.com/case-studies" }],
+        scripts: [
+          {
+                    type: "application/ld+json",
+                    children: JSON.stringify({
+                                "@context": "https://schema.org",
+                                "@type": "BreadcrumbList",
+                                itemListElement: [
+                                  { "@type": "ListItem", position: 1, name: "Home", item: "https://thegifting-lab.com/" },
+                                  { "@type": "ListItem", position: 2, name: "Case Studies", item: "https://thegifting-lab.com/case-studies" },
+                                            ],
+                    }),
+          },
+              ],
   }),
   component: CaseStudiesPage,
 });
