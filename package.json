@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "build:prerender": "vite build && node scripts/prerender.mjs",
+        "build:prerender": "vite build && npx playwright install chromium && node scripts/prerender.mjs",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write ."
@@ -65,6 +65,7 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
+        "playwright": "^1.48.0",
     "@eslint/js": "^9.32.0",
     "@types/node": "^22.16.5",
     "@types/react": "^19.2.0",
