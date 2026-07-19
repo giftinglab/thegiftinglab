@@ -81,6 +81,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c35661aa-5ced-45cf-b47c-e69c97b36684/id-preview-228f955f--564b5458-4b85-4f4e-a10e-b60710b4871a.lovable.app-1778589865922.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c35661aa-5ced-45cf-b47c-e69c97b36684/id-preview-228f955f--564b5458-4b85-4f4e-a10e-b60710b4871a.lovable.app-1778589865922.png" },
     ],
+        scripts: [
+          {
+                    type: "application/ld+json",
+                    children: JSON.stringify({
+                                "@context": "https://schema.org",
+                                "@type": "Organization",
+                                name: "The Gifting Lab",
+                                url: "https://thegifting-lab.com",
+                                logo: "https://thegifting-lab.com/favicon-32.png",
+                                foundingDate: "2019",
+                                areaServed: ["Malaysia", "Singapore", "Thailand"],
+                    }),
+          },
+              ],
   }),
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
