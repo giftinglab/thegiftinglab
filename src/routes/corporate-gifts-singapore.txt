@@ -14,8 +14,8 @@ import pTech from "@/assets/product-tech.jpg";
 import pNotebook from "@/assets/product-notebook.jpg";
 
 const PAGE_URL = "https://thegifting-lab.com/corporate-gifts-singapore";
-const PAGE_TITLE = "Corporate Gifts Singapore | Premium Custom Gifts — The Gifting Lab";
-const PAGE_DESC = "Premium corporate gifts in Singapore — custom branded kits, onboarding gifts, event giveaways and VIP hampers. Trusted by HR, marketing & procurement teams across SG.";
+const PAGE_TITLE = "Corporate Gifts Singapore | Premium Custom Gifts - The Gifting Lab";
+const PAGE_DESC = "Premium corporate gifts in Singapore - custom branded kits, onboarding gifts, event giveaways and VIP hampers. Trusted by HR, marketing & procurement teams across SG.";
 
 export const Route = createFileRoute("/corporate-gifts-singapore")({
   head: () => ({
@@ -42,7 +42,7 @@ export const Route = createFileRoute("/corporate-gifts-singapore")({
           provider: {
             "@type": "Organization",
             name: "The Gifting Lab",
-                      url: "https://thegifting-lab.com",
+            url: "https://thegifting-lab.com",
           },
           areaServed: { "@type": "Country", name: "Singapore" },
           name: "Corporate Gifts Singapore",
@@ -70,13 +70,13 @@ const audiences = [
   { icon: Users, t: "HR Teams", d: "Onboarding kits, work anniversaries and employee appreciation gifts that boost retention." },
   { icon: Rocket, t: "Marketing Teams", d: "Branded merchandise, event giveaways and influencer kits that drive brand recall." },
   { icon: Building2, t: "Procurement", d: "Volume pricing, consolidated invoicing and reliable lead times for recurring programs." },
-  { icon: Award, t: "Startups, SMEs & MNCs", d: "From 50 units to 10,000+ — scalable gifting for every stage of growth in Singapore." },
+  { icon: Award, t: "Startups, SMEs & MNCs", d: "From 50 units to 10,000+ - scalable gifting for every stage of growth in Singapore." },
 ];
 
 const categories = [
   { title: "Premium Corporate Gifts", img: ucVip, desc: "Executive leather goods, gourmet hampers and high-end tech accessories for VIP clients and C-suite." },
   { title: "Custom Branded Merchandise", img: pTote, desc: "Bespoke totes, apparel, drinkware and stationery with your logo, colours and packaging." },
-  { title: "Onboarding Kits", img: ucOnboarding, desc: "Welcome gifts for new hires — notebooks, bottles, swag and branded boxes delivered to home or office." },
+  { title: "Onboarding Kits", img: ucOnboarding, desc: "Welcome gifts for new hires - notebooks, bottles, swag and branded boxes delivered to home or office." },
   { title: "Event & Conference Gifts", img: ucEvent, desc: "Speaker gifts, delegate kits and roadshow giveaways for Singapore events and trade shows." },
   { title: "Festive Corporate Hampers", img: ucFestive, desc: "CNY, Hari Raya, Deepavali and Christmas hampers curated for clients, partners and employees." },
   { title: "Eco-Friendly Gifts", img: ucEco, desc: "Sustainable, recycled and FSC-certified gifts aligned with your ESG commitments." },
@@ -84,15 +84,15 @@ const categories = [
 
 const products = [
   { name: "Executive Welcome Kit", img: ucOnboarding, desc: "Leather notebook, brass pen, ceramic mug, branded box." },
-  { name: "Heritage Tote Set", img: pTote, desc: "Canvas tote, ceramic mug, brass pen — premium feel." },
+  { name: "Heritage Tote Set", img: pTote, desc: "Canvas tote, ceramic mug, brass pen - premium feel." },
   { name: "Tech Essentials Pouch", img: pTech, desc: "Wireless charger, power bank, cable kit in a custom pouch." },
   { name: "Drinkware Collection", img: pDrink, desc: "Insulated bottles and ceramic mugs, fully branded." },
 ];
 
 const whyUs = [
-  { i: Globe2, t: "Singapore-ready fulfillment", d: "Door-to-door delivery across Singapore — to offices, events or individual home addresses." },
-  { i: Sparkles, t: "Fully customizable", d: "Your logo, brand colours, custom packaging, personalized notes — no off-the-shelf compromises." },
-  { i: Truck, t: "Fast turnaround", d: "Most corporate gift programs ship within 15–30 days, including custom branding." },
+  { i: Globe2, t: "Singapore-ready fulfillment", d: "Door-to-door delivery across Singapore - to offices, events or individual home addresses." },
+  { i: Sparkles, t: "Fully customizable", d: "Your logo, brand colours, custom packaging, personalized notes - no off-the-shelf compromises." },
+  { i: Truck, t: "Fast turnaround", d: "Most corporate gift programs ship within 15-30 days, including custom branding." },
   { i: PackageCheck, t: "End-to-end service", d: "Concept, design mockups, production, QC, kitting, packing and last-mile delivery handled in-house." },
   { i: Leaf, t: "Sustainable options", d: "Recycled, biodegradable and FSC-certified materials available across most categories." },
   { i: Award, t: "B2B-grade quality", d: "Trusted by banks, tech companies, agencies and MNCs for premium corporate gifting in Singapore." },
@@ -108,11 +108,11 @@ const process = [
 const faqs = [
   {
     q: "What is the minimum order quantity for corporate gifts in Singapore?",
-    a: "Most of our customized corporate gift programs start from 50 units, though some ready-made kits can be ordered from smaller quantities. For fully bespoke gifts with custom packaging, MOQs typically begin at 100–200 units depending on the product.",
+    a: "Most of our customized corporate gift programs start from 50 units, though some ready-made kits can be ordered from smaller quantities. For fully bespoke gifts with custom packaging, MOQs typically begin at 100-200 units depending on the product.",
   },
   {
     q: "How long does it take to produce and deliver custom corporate gifts?",
-    a: "Standard lead time is 15–30 days from artwork approval, including production, branding, QC, kitting and delivery within Singapore. Rush orders can sometimes be accommodated — share your deadline with us and we'll advise honestly.",
+    a: "Standard lead time is 15-30 days from artwork approval, including production, branding, QC, kitting and delivery within Singapore. Rush orders can sometimes be accommodated - share your deadline with us and we'll advise honestly.",
   },
   {
     q: "Can you deliver corporate gifts to individual home addresses in Singapore?",
@@ -120,20 +120,26 @@ const faqs = [
   },
   {
     q: "Do you offer eco-friendly and sustainable corporate gifts?",
-    a: "Yes. We have a full range of eco-friendly corporate gifts including recycled materials, FSC-certified paper, biodegradable packaging and ethically-sourced products — perfect for companies with active ESG and sustainability commitments.",
+    a: "Yes. We have a full range of eco-friendly corporate gifts including recycled materials, FSC-certified paper, biodegradable packaging and ethically-sourced products - perfect for companies with active ESG and sustainability commitments.",
   },
   {
     q: "Can you fully customize the gift box and packaging with our branding?",
-    a: "Absolutely. Custom packaging is a core part of what we do — from printed sleeves and magnetic gift boxes to branded tissue paper, ribbons, thank-you cards and bespoke inserts. Your unboxing experience should feel as premium as the gifts inside.",
+    a: "Absolutely. Custom packaging is a core part of what we do - from printed sleeves and magnetic gift boxes to branded tissue paper, ribbons, thank-you cards and bespoke inserts. Your unboxing experience should feel as premium as the gifts inside.",
   },
   {
     q: "What types of companies do you work with in Singapore?",
-    a: "We supply corporate gifts to HR, marketing and procurement teams across startups, SMEs and MNCs in Singapore — including banks, fintechs, SaaS companies, professional services firms, event agencies and regional headquarters of global brands.",
+    a: "We supply corporate gifts to HR, marketing and procurement teams across startups, SMEs and MNCs in Singapore - including banks, fintechs, SaaS companies, professional services firms, event agencies and regional headquarters of global brands.",
   },
   {
     q: "How do I request a quotation?",
     a: "Send us your brief via the quote form or WhatsApp at +60 10 873 9642. Share your audience, quantity, budget range and deadline, and we'll return a tailored proposal with product options and pricing within 48 hours.",
   },
+];
+
+const otherMarkets = [
+  { to: "/corporate-gifts-malaysia", label: "Malaysia" },
+  { to: "/corporate-gifts-thailand", label: "Thailand" },
+  { to: "/corporate-gifts-australia", label: "Australia" },
 ];
 
 function CorporateGiftsSingapore() {
@@ -144,7 +150,7 @@ function CorporateGiftsSingapore() {
         <div className="container-page pt-16 pb-20 md:pt-24 md:pb-28 grid lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-7 animate-fade-up">
             <span className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gold bg-secondary/50 px-3 py-1 rounded-full">
-              <span className="h-1.5 w-1.5 rounded-full bg-gold" /> Singapore · B2B Corporate Gifting
+              <span className="h-1.5 w-1.5 rounded-full bg-gold" /> Singapore - B2B Corporate Gifting
             </span>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.02]">
               Corporate Gifts<br />
@@ -152,7 +158,7 @@ function CorporateGiftsSingapore() {
               done properly.
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl">
-              Premium, fully customized corporate gifts for HR, marketing and procurement teams across Singapore. From onboarding kits to VIP hampers — designed, branded and delivered door-to-door.
+              Premium, fully customized corporate gifts for HR, marketing and procurement teams across Singapore. From onboarding kits to VIP hampers - designed, branded and delivered door-to-door.
             </p>
             <ul className="grid sm:grid-cols-2 gap-y-2 gap-x-6 text-sm">
               {["Custom branding & packaging", "Island-wide SG delivery", "Low MOQ from 50 units", "Quote within 48 hours"].map((f) => (
@@ -179,14 +185,14 @@ function CorporateGiftsSingapore() {
             <div className="absolute -inset-6 bg-secondary/60 rounded-3xl -z-10" />
             <img
               src={heroImg}
-              alt="Premium corporate gift kit Singapore — branded navy box with tote, mug, notebook and brass pen"
+              alt="Premium corporate gift kit Singapore - branded navy box with tote, mug, notebook and brass pen"
               width={1920}
               height={1080}
               className="rounded-2xl shadow-2xl shadow-primary/10 object-cover aspect-[4/3] w-full"
             />
             <div className="absolute -bottom-6 -left-6 hidden md:flex flex-col gap-1 rounded-2xl bg-background border border-border p-5 shadow-xl">
               <span className="text-xs text-muted-foreground">SG delivery</span>
-              <span className="font-display text-2xl">15–30 days</span>
+              <span className="font-display text-2xl">15-30 days</span>
             </div>
           </div>
         </div>
@@ -198,7 +204,7 @@ function CorporateGiftsSingapore() {
           <Stat n="500+" label="Corporate clients" />
           <Stat n="10,000+" label="Gifts delivered" />
           <Stat n="48 hrs" label="Quotation turnaround" />
-          <Stat n="MY · SG · TH" label="Regional fulfillment" />
+          <Stat n="MY - SG - TH" label="Regional fulfillment" />
         </div>
       </section>
 
@@ -206,18 +212,34 @@ function CorporateGiftsSingapore() {
       <section className="container-page py-20 md:py-28 max-w-4xl">
         <span className="text-xs tracking-widest uppercase text-gold">Singapore's premium corporate gifting partner</span>
         <h2 className="font-display text-4xl md:text-5xl leading-[1.05] mt-4">
-          Corporate gifts that strengthen relationships — not collect dust.
+          Corporate gifts that strengthen relationships - not collect dust.
         </h2>
         <div className="mt-8 space-y-5 text-lg text-muted-foreground leading-relaxed">
           <p>
             In Singapore's competitive business landscape, a thoughtfully chosen corporate gift does far more than tick a box. It welcomes a new hire on day one, thanks a client after a successful project, celebrates a milestone with your team, or leaves a lasting impression at a flagship event. The wrong gift gets re-gifted; the right one becomes part of your brand story.
           </p>
           <p>
-            The Gifting Lab is a Singapore-focused corporate gift supplier built around one belief: corporate gifts should feel premium, personal and on-brand — not generic. We work with HR, marketing and procurement teams at startups, SMEs and MNCs to design, produce and deliver fully customized corporate gifts across Singapore, with the quality control and consistency that B2B buyers expect.
+            The Gifting Lab is a Singapore-focused corporate gift supplier built around one belief: corporate gifts should feel premium, personal and on-brand - not generic. We work with HR, marketing and procurement teams at startups, SMEs and MNCs to design, produce and deliver fully customized corporate gifts across Singapore, with the quality control and consistency that B2B buyers expect.
           </p>
           <p>
-            Whether you need 50 onboarding kits for a growing tech team, 800 VIP hampers for year-end client gifting, or 3,500 branded delegate kits for a regional conference at Marina Bay Sands, we handle the end-to-end process — sourcing, custom branding, packaging, kitting, QC and island-wide delivery.
+            Whether you need 50 onboarding kits for a growing tech team, 800 VIP hampers for year-end client gifting, or 3,500 branded delegate kits for a regional conference at Marina Bay Sands, we handle the end-to-end process - sourcing, custom branding, packaging, kitting, QC and island-wide delivery.
           </p>
+        </div>
+      </section>
+
+      {/* OTHER MARKETS */}
+      <section className="container-page pb-16 md:pb-20">
+        <div className="flex flex-wrap items-center gap-3">
+          <span className="text-xs uppercase tracking-widest text-muted-foreground">Also serving</span>
+          {otherMarkets.map((m) => (
+            <Link
+              key={m.to}
+              to={m.to}
+              className="inline-flex items-center rounded-full border border-border px-4 py-1.5 text-sm hover:border-foreground/40 hover:bg-secondary/50 transition-colors"
+            >
+              {m.label}
+            </Link>
+          ))}
         </div>
       </section>
 
@@ -227,7 +249,7 @@ function CorporateGiftsSingapore() {
           <SectionHeader
             eyebrow="Who we serve"
             title="Built for Singapore's most demanding teams."
-            desc="From fast-growing startups to global headquarters — we work with the people responsible for getting corporate gifting right."
+            desc="From fast-growing startups to global headquarters - we work with the people responsible for getting corporate gifting right."
           />
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {audiences.map((a) => (
@@ -246,7 +268,7 @@ function CorporateGiftsSingapore() {
         <SectionHeader
           eyebrow="What we deliver"
           title="A full range of corporate gifts for Singapore businesses."
-          desc="Every category is fully customizable — branding, packaging, contents and price point tailored to your program."
+          desc="Every category is fully customizable - branding, packaging, contents and price point tailored to your program."
         />
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {categories.map((c) => (
@@ -282,7 +304,7 @@ function CorporateGiftsSingapore() {
             {products.map((p) => (
               <div key={p.name} className="group">
                 <div className="overflow-hidden rounded-2xl bg-background aspect-square border border-border">
-                  <img src={p.img} alt={`${p.name} — corporate gift Singapore`} loading="lazy" width={1024} height={1024} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={p.img} alt={`${p.name} - corporate gift Singapore`} loading="lazy" width={1024} height={1024} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
                 <div className="pt-4 space-y-1">
                   <h3 className="font-display text-lg">{p.name}</h3>
@@ -303,7 +325,7 @@ function CorporateGiftsSingapore() {
               The corporate gift supplier Singapore teams actually recommend.
             </h2>
             <p className="text-primary-foreground/70 max-w-md">
-              We're not a print shop with a catalogue. We're product designers with a regional supply chain — built specifically for premium B2B corporate gifting at scale.
+              We're not a print shop with a catalogue. We're product designers with a regional supply chain - built specifically for premium B2B corporate gifting at scale.
             </p>
             <Link to="/contact" className="inline-flex items-center gap-2 h-12 rounded-full bg-background text-foreground px-6 text-sm font-medium hover:scale-[1.02] transition-transform">
               Talk to our team <ArrowRight className="h-4 w-4" />
@@ -365,7 +387,7 @@ function CorporateGiftsSingapore() {
       <section className="container-page py-24 md:py-28 max-w-3xl">
         <SectionHeader
           eyebrow="FAQ"
-          title="Corporate gifts in Singapore — answered."
+          title="Corporate gifts in Singapore - answered."
           desc="Common questions from HR, marketing and procurement teams."
         />
         <Accordion type="single" collapsible className="mt-12">
