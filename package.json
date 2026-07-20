@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-                "build:prerender": "vite build && npm install --no-save playwright@1.48.2 && npx playwright install chromium && node scripts/prerender.mjs",
+                    "build:prerender": "vite build && node scripts/prerender.mjs",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write ."
