@@ -11,7 +11,10 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as GiftKitsRouteImport } from './routes/gift-kits'
 import { Route as CustomizationRouteImport } from './routes/customization'
+import { Route as CorporateGiftsThailandRouteImport } from './routes/corporate-gifts-thailand'
 import { Route as CorporateGiftsSingaporeRouteImport } from './routes/corporate-gifts-singapore'
+import { Route as CorporateGiftsMalaysiaRouteImport } from './routes/corporate-gifts-malaysia'
+import { Route as CorporateGiftsAustraliaRouteImport } from './routes/corporate-gifts-australia'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CatalogRouteImport } from './routes/catalog'
 import { Route as CaseStudiesRouteImport } from './routes/case-studies'
@@ -19,191 +22,251 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
 const GiftKitsRoute = GiftKitsRouteImport.update({
-  id: '/gift-kits',
-  path: '/gift-kits',
-  getParentRoute: () => rootRouteImport,
+    id: '/gift-kits',
+    path: '/gift-kits',
+    getParentRoute: () => rootRouteImport,
 } as any)
 const CustomizationRoute = CustomizationRouteImport.update({
-  id: '/customization',
-  path: '/customization',
-  getParentRoute: () => rootRouteImport,
+    id: '/customization',
+    path: '/customization',
+    getParentRoute: () => rootRouteImport,
+} as any)
+const CorporateGiftsThailandRoute = CorporateGiftsThailandRouteImport.update({
+    id: '/corporate-gifts-thailand',
+    path: '/corporate-gifts-thailand',
+    getParentRoute: () => rootRouteImport,
 } as any)
 const CorporateGiftsSingaporeRoute = CorporateGiftsSingaporeRouteImport.update({
-  id: '/corporate-gifts-singapore',
-  path: '/corporate-gifts-singapore',
-  getParentRoute: () => rootRouteImport,
+    id: '/corporate-gifts-singapore',
+    path: '/corporate-gifts-singapore',
+    getParentRoute: () => rootRouteImport,
+} as any)
+const CorporateGiftsMalaysiaRoute = CorporateGiftsMalaysiaRouteImport.update({
+    id: '/corporate-gifts-malaysia',
+    path: '/corporate-gifts-malaysia',
+    getParentRoute: () => rootRouteImport,
+} as any)
+const CorporateGiftsAustraliaRoute = CorporateGiftsAustraliaRouteImport.update({
+    id: '/corporate-gifts-australia',
+    path: '/corporate-gifts-australia',
+    getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
+    id: '/contact',
+    path: '/contact',
+    getParentRoute: () => rootRouteImport,
 } as any)
 const CatalogRoute = CatalogRouteImport.update({
-  id: '/catalog',
-  path: '/catalog',
-  getParentRoute: () => rootRouteImport,
+    id: '/catalog',
+    path: '/catalog',
+    getParentRoute: () => rootRouteImport,
 } as any)
 const CaseStudiesRoute = CaseStudiesRouteImport.update({
-  id: '/case-studies',
-  path: '/case-studies',
-  getParentRoute: () => rootRouteImport,
+    id: '/case-studies',
+    path: '/case-studies',
+    getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
-  getParentRoute: () => rootRouteImport,
+    id: '/about',
+    path: '/about',
+    getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => rootRouteImport,
+    id: '/',
+    path: '/',
+    getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
+    '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/case-studies': typeof CaseStudiesRoute
   '/catalog': typeof CatalogRoute
   '/contact': typeof ContactRoute
+  '/corporate-gifts-australia': typeof CorporateGiftsAustraliaRoute
+  '/corporate-gifts-malaysia': typeof CorporateGiftsMalaysiaRoute
   '/corporate-gifts-singapore': typeof CorporateGiftsSingaporeRoute
+  '/corporate-gifts-thailand': typeof CorporateGiftsThailandRoute
   '/customization': typeof CustomizationRoute
   '/gift-kits': typeof GiftKitsRoute
 }
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
+    '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/case-studies': typeof CaseStudiesRoute
   '/catalog': typeof CatalogRoute
   '/contact': typeof ContactRoute
+  '/corporate-gifts-australia': typeof CorporateGiftsAustraliaRoute
+  '/corporate-gifts-malaysia': typeof CorporateGiftsMalaysiaRoute
   '/corporate-gifts-singapore': typeof CorporateGiftsSingaporeRoute
+  '/corporate-gifts-thailand': typeof CorporateGiftsThailandRoute
   '/customization': typeof CustomizationRoute
   '/gift-kits': typeof GiftKitsRoute
 }
 export interface FileRoutesById {
-  __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
+    __root__: typeof rootRouteImport
+    '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/case-studies': typeof CaseStudiesRoute
   '/catalog': typeof CatalogRoute
   '/contact': typeof ContactRoute
+  '/corporate-gifts-australia': typeof CorporateGiftsAustraliaRoute
+  '/corporate-gifts-malaysia': typeof CorporateGiftsMalaysiaRoute
   '/corporate-gifts-singapore': typeof CorporateGiftsSingaporeRoute
+  '/corporate-gifts-thailand': typeof CorporateGiftsThailandRoute
   '/customization': typeof CustomizationRoute
   '/gift-kits': typeof GiftKitsRoute
 }
 export interface FileRouteTypes {
-  fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths:
-    | '/'
-    | '/about'
-    | '/case-studies'
-    | '/catalog'
-    | '/contact'
-    | '/corporate-gifts-singapore'
-    | '/customization'
-    | '/gift-kits'
-  fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/about'
-    | '/case-studies'
-    | '/catalog'
-    | '/contact'
-    | '/corporate-gifts-singapore'
-    | '/customization'
-    | '/gift-kits'
-  id:
-    | '__root__'
-    | '/'
-    | '/about'
-    | '/case-studies'
-    | '/catalog'
-    | '/contact'
-    | '/corporate-gifts-singapore'
-    | '/customization'
-    | '/gift-kits'
-  fileRoutesById: FileRoutesById
+    fileRoutesByFullPath: FileRoutesByFullPath
+    fullPaths:
+      | '/'
+      | '/about'
+      | '/case-studies'
+      | '/catalog'
+      | '/contact'
+      | '/corporate-gifts-australia'
+      | '/corporate-gifts-malaysia'
+      | '/corporate-gifts-singapore'
+      | '/corporate-gifts-thailand'
+      | '/customization'
+      | '/gift-kits'
+    fileRoutesByTo: FileRoutesByTo
+    to:
+      | '/'
+      | '/about'
+      | '/case-studies'
+      | '/catalog'
+      | '/contact'
+      | '/corporate-gifts-australia'
+      | '/corporate-gifts-malaysia'
+      | '/corporate-gifts-singapore'
+      | '/corporate-gifts-thailand'
+      | '/customization'
+      | '/gift-kits'
+    id:
+      | '__root__'
+      | '/'
+      | '/about'
+      | '/case-studies'
+      | '/catalog'
+      | '/contact'
+      | '/corporate-gifts-australia'
+      | '/corporate-gifts-malaysia'
+      | '/corporate-gifts-singapore'
+      | '/corporate-gifts-thailand'
+      | '/customization'
+      | '/gift-kits'
+    fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
-  AboutRoute: typeof AboutRoute
-  CaseStudiesRoute: typeof CaseStudiesRoute
-  CatalogRoute: typeof CatalogRoute
-  ContactRoute: typeof ContactRoute
-  CorporateGiftsSingaporeRoute: typeof CorporateGiftsSingaporeRoute
-  CustomizationRoute: typeof CustomizationRoute
-  GiftKitsRoute: typeof GiftKitsRoute
+    IndexRoute: typeof IndexRoute
+    AboutRoute: typeof AboutRoute
+    CaseStudiesRoute: typeof CaseStudiesRoute
+    CatalogRoute: typeof CatalogRoute
+    ContactRoute: typeof ContactRoute
+    CorporateGiftsAustraliaRoute: typeof CorporateGiftsAustraliaRoute
+    CorporateGiftsMalaysiaRoute: typeof CorporateGiftsMalaysiaRoute
+    CorporateGiftsSingaporeRoute: typeof CorporateGiftsSingaporeRoute
+    CorporateGiftsThailandRoute: typeof CorporateGiftsThailandRoute
+    CustomizationRoute: typeof CustomizationRoute
+    GiftKitsRoute: typeof GiftKitsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/gift-kits': {
-      id: '/gift-kits'
-      path: '/gift-kits'
-      fullPath: '/gift-kits'
-      preLoaderRoute: typeof GiftKitsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/customization': {
-      id: '/customization'
-      path: '/customization'
-      fullPath: '/customization'
-      preLoaderRoute: typeof CustomizationRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/corporate-gifts-singapore': {
-      id: '/corporate-gifts-singapore'
-      path: '/corporate-gifts-singapore'
-      fullPath: '/corporate-gifts-singapore'
-      preLoaderRoute: typeof CorporateGiftsSingaporeRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/catalog': {
-      id: '/catalog'
-      path: '/catalog'
-      fullPath: '/catalog'
-      preLoaderRoute: typeof CatalogRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/case-studies': {
-      id: '/case-studies'
-      path: '/case-studies'
-      fullPath: '/case-studies'
-      preLoaderRoute: typeof CaseStudiesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
-      preLoaderRoute: typeof AboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
+        '/gift-kits': {
+          id: '/gift-kits'
+          path: '/gift-kits'
+          fullPath: '/gift-kits'
+          preLoaderRoute: typeof GiftKitsRouteImport
+          parentRoute: typeof rootRouteImport
   }
+      '/customization': {
+              id: '/customization'
+              path: '/customization'
+              fullPath: '/customization'
+              preLoaderRoute: typeof CustomizationRouteImport
+              parentRoute: typeof rootRouteImport
+      }
+      '/corporate-gifts-thailand': {
+              id: '/corporate-gifts-thailand'
+              path: '/corporate-gifts-thailand'
+              fullPath: '/corporate-gifts-thailand'
+              preLoaderRoute: typeof CorporateGiftsThailandRouteImport
+              parentRoute: typeof rootRouteImport
+      }
+      '/corporate-gifts-singapore': {
+              id: '/corporate-gifts-singapore'
+              path: '/corporate-gifts-singapore'
+              fullPath: '/corporate-gifts-singapore'
+              preLoaderRoute: typeof CorporateGiftsSingaporeRouteImport
+              parentRoute: typeof rootRouteImport
+      }
+      '/corporate-gifts-malaysia': {
+              id: '/corporate-gifts-malaysia'
+              path: '/corporate-gifts-malaysia'
+              fullPath: '/corporate-gifts-malaysia'
+              preLoaderRoute: typeof CorporateGiftsMalaysiaRouteImport
+              parentRoute: typeof rootRouteImport
+      }
+      '/corporate-gifts-australia': {
+              id: '/corporate-gifts-australia'
+              path: '/corporate-gifts-australia'
+              fullPath: '/corporate-gifts-australia'
+              preLoaderRoute: typeof CorporateGiftsAustraliaRouteImport
+              parentRoute: typeof rootRouteImport
+      }
+      '/contact': {
+              id: '/contact'
+              path: '/contact'
+              fullPath: '/contact'
+              preLoaderRoute: typeof ContactRouteImport
+              parentRoute: typeof rootRouteImport
+      }
+      '/catalog': {
+              id: '/catalog'
+              path: '/catalog'
+              fullPath: '/catalog'
+              preLoaderRoute: typeof CatalogRouteImport
+              parentRoute: typeof rootRouteImport
+      }
+      '/case-studies': {
+              id: '/case-studies'
+              path: '/case-studies'
+              fullPath: '/case-studies'
+              preLoaderRoute: typeof CaseStudiesRouteImport
+              parentRoute: typeof rootRouteImport
+      }
+      '/about': {
+              id: '/about'
+              path: '/about'
+              fullPath: '/about'
+              preLoaderRoute: typeof AboutRouteImport
+              parentRoute: typeof rootRouteImport
+      }
+      '/': {
+              id: '/'
+              path: '/'
+              fullPath: '/'
+              preLoaderRoute: typeof IndexRouteImport
+              parentRoute: typeof rootRouteImport
+      }
+}
 }
 
 const rootRouteChildren: RootRouteChildren = {
-  IndexRoute: IndexRoute,
-  AboutRoute: AboutRoute,
-  CaseStudiesRoute: CaseStudiesRoute,
-  CatalogRoute: CatalogRoute,
-  ContactRoute: ContactRoute,
-  CorporateGiftsSingaporeRoute: CorporateGiftsSingaporeRoute,
-  CustomizationRoute: CustomizationRoute,
-  GiftKitsRoute: GiftKitsRoute,
+    IndexRoute: IndexRoute,
+    AboutRoute: AboutRoute,
+    CaseStudiesRoute: CaseStudiesRoute,
+    CatalogRoute: CatalogRoute,
+    ContactRoute: ContactRoute,
+    CorporateGiftsAustraliaRoute: CorporateGiftsAustraliaRoute,
+    CorporateGiftsMalaysiaRoute: CorporateGiftsMalaysiaRoute,
+    CorporateGiftsSingaporeRoute: CorporateGiftsSingaporeRoute,
+    CorporateGiftsThailandRoute: CorporateGiftsThailandRoute,
+    CustomizationRoute: CustomizationRoute,
+    GiftKitsRoute: GiftKitsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
